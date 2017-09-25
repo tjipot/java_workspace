@@ -8,10 +8,10 @@ package com.univesre.crazy_java_notes.ch18_classloader.s2_classloader;
  */
 public class Hello {
 
-	public static void main(String[] args) {
-		
-		for(String arg : args) {
-			System.out.print("Params Of Running Hello: " + arg);
-		}
-	}
+    public static void main(String[] args) {
+
+        for (String arg : args) {
+            System.out.print("Params Of Running Hello: " + arg);
+        }
+    }
 }

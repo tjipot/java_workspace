@@ -8,11 +8,11 @@ package com.univesre.RuntimeDemo;
  */
 public class ExecDemoFini {
 
-	public static void main(String[] args) {
-		
-		Runtime r = Runtime.getRuntime();
+    public static void main(String[] args) {
+
+        Runtime r = Runtime.getRuntime();
         Process p = null;
-        try{
+        try {
             p = r.exec("notepad");
             p.waitFor();
         } catch (Exception e) {
@@ -20,10 +20,10 @@ public class ExecDemoFini {
         }
         System.out.println("Notepad returned " + p.exitValue());
         /*	Error executing notepad.Exception in thread "main" java.lang.NullPointerException
-			at com.univesre.RuntimeDemo.ExecDemoFini.main(ExecDemoFini.java:21)
+            at com.univesre.RuntimeDemo.ExecDemoFini.main(ExecDemoFini.java:21)
 			因为压根就没有`notepad`对应的程序, p对象也没法有引用到;
          */
-		
-	}
+
+    }
 
 }

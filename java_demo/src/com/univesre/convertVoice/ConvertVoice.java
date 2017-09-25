@@ -17,31 +17,32 @@ import it.sauronsoftware.jave.InputFormatException;
  */
 public class ConvertVoice {
 
-	public static void main(String[] args) throws Exception {
-		change();
-	}
-	public static void change() {
-		
-		File source = new File("/Users/UNIVESRE/Desktop/ykhd.amr");
-		File target = new File("/Users/UNIVESRE/Desktop/converted.mp3");
-		AudioAttributes audio = new AudioAttributes();
-		Encoder encoder = new Encoder();
-		
-		audio.setCodec("libmp3lame");
-		EncodingAttributes attrs = new EncodingAttributes();
-		attrs.setFormat("mp3");
-		attrs.setAudioAttributes(audio);
-	
-		try {
-			encoder.encode(source, target, attrs);
-		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
-		} catch (InputFormatException e) {
-			e.printStackTrace();
-		} catch (EncoderException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) throws Exception {
+        change();
+    }
+
+    public static void change() {
+
+        File source = new File("/Users/UNIVESRE/Desktop/ykhd.amr");
+        File target = new File("/Users/UNIVESRE/Desktop/converted.mp3");
+        AudioAttributes audio = new AudioAttributes();
+        Encoder encoder = new Encoder();
+
+        audio.setCodec("libmp3lame");
+        EncodingAttributes attrs = new EncodingAttributes();
+        attrs.setFormat("mp3");
+        attrs.setAudioAttributes(audio);
+
+        try {
+            encoder.encode(source, target, attrs);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        } catch (InputFormatException e) {
+            e.printStackTrace();
+        } catch (EncoderException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 /*

@@ -9,7 +9,7 @@ import it.sauronsoftware.jave.AudioAttributes;
 import it.sauronsoftware.jave.Encoder;
 import it.sauronsoftware.jave.EncoderException;
 import it.sauronsoftware.jave.EncodingAttributes;
-import it.sauronsoftware.jave.InputFormatException; 
+import it.sauronsoftware.jave.InputFormatException;
 
 /**
  * @ClassName: Main
@@ -18,43 +18,43 @@ import it.sauronsoftware.jave.InputFormatException;
  * @date: 2017年7月11日 下午6:02:15
  */
 public class Main {
-	
-	public static boolean amrToMp3(String localPath, String targetFilePath) {  
-		  
-        try {  
-  
-            System.out.println("**************  ffmpeg ****************");  
-  
-            java.lang.Runtime rt = Runtime.getRuntime(); 
+
+    public static boolean amrToMp3(String localPath, String targetFilePath) {
+
+        try {
+
+            System.out.println("**************  ffmpeg ****************");
+
+            java.lang.Runtime rt = Runtime.getRuntime();
             ///usr/local/Cellar/ffmpeg
-            String command = "/usr/local/Cellar/ffmpeg -i " + localPath + " " + targetFilePath;   
-  
-            Process proc = rt.exec(command);  
-            InputStream stderr = proc.getErrorStream();  
-            InputStreamReader isr = new InputStreamReader(stderr);  
-            BufferedReader br = new BufferedReader(isr);  
-            String line = null;  
-            StringBuffer sb = new StringBuffer();  
-            while ((line = br.readLine()) != null)  
-                sb.append(line);  
-  
-            System.out.println("ffmpeg Process errorInfo: " + sb.toString());  
-  
-            int exitVal = proc.waitFor();  
-            System.out.println("ffmpeg Process exitValue: " + exitVal);  
-  
-            return true;  
-        } catch (Exception e) {  
-            System.out.println("ffmpeg exec cmd Exception " + e.toString());  
-        }  
-        return false;  
-    }  
-      
-    public static void main(String[] args) {  
-        String path1 = "/Users/univesre/Desktop/ykhd.amr";  
-        String path2 = "/Users/univesre/Desktop/bb.mp3";  
-        amrToMp3(path1, path2);  
-    }  
+            String command = "/usr/local/Cellar/ffmpeg -i " + localPath + " " + targetFilePath;
+
+            Process proc = rt.exec(command);
+            InputStream stderr = proc.getErrorStream();
+            InputStreamReader isr = new InputStreamReader(stderr);
+            BufferedReader br = new BufferedReader(isr);
+            String line = null;
+            StringBuffer sb = new StringBuffer();
+            while ((line = br.readLine()) != null)
+                sb.append(line);
+
+            System.out.println("ffmpeg Process errorInfo: " + sb.toString());
+
+            int exitVal = proc.waitFor();
+            System.out.println("ffmpeg Process exitValue: " + exitVal);
+
+            return true;
+        } catch (Exception e) {
+            System.out.println("ffmpeg exec cmd Exception " + e.toString());
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        String path1 = "/Users/univesre/Desktop/ykhd.amr";
+        String path2 = "/Users/univesre/Desktop/bb.mp3";
+        amrToMp3(path1, path2);
+    }
 
 //	public static void main(String[] args) throws Exception {  
 ////        String path1 = "Audio/ykhd.amr"; 

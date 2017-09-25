@@ -8,9 +8,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD})
 public @interface ForthThing {
-	
-	public String value() default "第四件事";
-	
-	public String Property() default "无属性";
-	
+
+    public String value() default "第四件事";
+
+    public String Property() default "无属性";
+
 }

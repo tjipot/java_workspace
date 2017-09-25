@@ -8,27 +8,30 @@ package com.univesre.enumerator;
  */
 public class EnumTest {
 
-	public static void main(String[] args) {
-		
-		for(EnumDemo e : EnumDemo.values()) {
-			System.out.println(e.toString());
-			System.out.println();
-		}
-		
-		System.out.println("======Break Line=====");
+    public static void main(String[] args) {
 
-		EnumDemo eDemo = EnumDemo.FRIDAY;
-		switch(eDemo) {
-		
-			case MONDAY:
-				System.out.println("Today Is Monday."); break;
-			case FRIDAY:
-				System.out.println("Today Is Friday."); break;
-			default:
-				System.out.println(eDemo); break;
-			
-		}
-		
-	}
+        for (EnumDemo e : EnumDemo.values()) {
+            System.out.println(e.toString());
+            System.out.println();
+        }
+
+        System.out.println("======Break Line=====");
+
+        EnumDemo eDemo = EnumDemo.FRIDAY;
+        switch (eDemo) {
+
+            case MONDAY:
+                System.out.println("Today Is Monday.");
+                break;
+            case FRIDAY:
+                System.out.println("Today Is Friday.");
+                break;
+            default:
+                System.out.println(eDemo);
+                break;
+
+        }
+
+    }
 
 }

@@ -7,13 +7,13 @@ package com.univesre.enumerator;
  * @date: 2017年7月7日 上午10:06:16
  */
 public enum EnumDemo {
-	
-	SUNDAY,
-	MONDAY,
-	TUESDAY,
-	WEDNESDAY,
-	THURSDAY,
-	FRIDAY,
-	SATURDAY
-	
+
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY
+
 }

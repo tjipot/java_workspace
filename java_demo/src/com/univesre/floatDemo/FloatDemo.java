@@ -14,8 +14,8 @@ public class FloatDemo {
         int itemNum = 3;
         float totalPrice = aVirtualPrice * itemNum;
         System.out.println(totalPrice);
-        System.out.println(Math.round(totalPrice * 100)/100);
-        float finalPrice = (float)(Math.round(totalPrice * 100)) / 100;
+        System.out.println(Math.round(totalPrice * 100) / 100);
+        float finalPrice = (float) (Math.round(totalPrice * 100)) / 100;
         System.out.println(finalPrice);
 
         float aFloatNumber = (float) 1.2;
