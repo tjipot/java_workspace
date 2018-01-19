@@ -1,5 +1,6 @@
 package com.univesre.uuid;
 
+import java.util.Date;
 import java.util.UUID;
 
 public class UUIDTester {
@@ -8,6 +9,9 @@ public class UUIDTester {
         // TODO Auto-generated method stub
         UUID uuid = UUID.randomUUID();
         System.out.println(uuid);
+
+
+	    System.out.println(new Date().getTime());
 //		System.out.println(uuid.toString());
     }
     //	060d1093-e0cb-4608-b82f-57b90b98ab28
