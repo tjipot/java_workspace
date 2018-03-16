@@ -20,7 +20,7 @@ public class UUIDTester {
 		// System.out.println(uuid);
 		// System.out.println(uuid.toString());
 		//	060d1093-e0cb-4608-b82f-57b90b98ab28
-		uuidStr2TxtFile("/Users/UNIVESRE/Desktop/uuidStr.txt", 10000);
+		// uuidStr2TxtFile("/Users/UNIVESRE/Desktop/uuidStr.txt", 10000);
 
 		// 产生时间;
 		// System.out.println(new Date().getTime());
@@ -28,6 +28,21 @@ public class UUIDTester {
 		// 测试6位兑换码是否重复: 看输出;
 		// verifyCouponCode("/Users/UNIVESRE/Desktop/pureSixChars.txt");
 
+		// 获取30个UUID;
+		consoleOutUuid(30);
+
+	}
+
+	/**
+	 * @param uuidAmount
+	 */
+	public static void consoleOutUuid(int uuidAmount) {
+		// 产生UUID;
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < uuidAmount; i++) {
+			sb.append(UUID.randomUUID().toString() + "\n");    // "\n";
+		}
+		System.out.println(sb);
 	}
 
 	public static void uuidStr2TxtFile(String filePath, int uuidAmount) {
