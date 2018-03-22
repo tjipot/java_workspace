@@ -1,8 +1,17 @@
-package com.univesre.annotation;
+//package com.univesre.annotation;
+package annotation;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+/**
+ * @File: AnnoInjection.java
+ * @Classname: AnnoInjection
+ * @Description: TODO
+ * @Author: Haoran Ye
+ * @CreateDate: 18/3/22 17:49
+ * @ModificationHistory: WHAT WHEN WHO
+ **/
 public class AnnoInjection {
 
     public static Object getBean(Object obj) {
