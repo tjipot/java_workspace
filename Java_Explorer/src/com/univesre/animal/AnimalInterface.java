@@ -1,4 +1,5 @@
-package com.univesre.animal;
+//package com.univesre.animal;
+package animal;
 
 public interface AnimalInterface {
 

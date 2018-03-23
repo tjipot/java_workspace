@@ -1,7 +1,10 @@
-package com.univesre.animal.impl;
+//package com.univesre.animal.impl;
+package animal.impl;
 
-import com.univesre.animal.*;
-import com.univesre.annotation.ForthThing;
+//import com.univesre.animal.*;
+//import com.univesre.annotation.ForthThing;
+import animal.*;
+import annotation.ForthThing;
 
 public class DogImpAnimalInterface implements AnimalInterface {
 

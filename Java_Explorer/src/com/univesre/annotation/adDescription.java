@@ -6,9 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @File: Description.java
- * @Classname: Description
- * @Description: TODO
+ * @File: adDescription.java
+ * @Classname: adDescription
+ * @Description: adDescription注解
  * @Author: Haoran Ye
  * @CreateDate: 18/3/22 18:26
  * @ModificationHistory: WHAT WHEN WHO
