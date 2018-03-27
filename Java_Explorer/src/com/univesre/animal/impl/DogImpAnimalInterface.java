@@ -4,7 +4,7 @@ package animal.impl;
 //import com.univesre.animal.*;
 //import com.univesre.annotation.ForthThing;
 import animal.*;
-import annotation.ForthThing;
+import factory.annoCollection.ForthThing;
 
 public class DogImpAnimalInterface implements AnimalInterface {
 
