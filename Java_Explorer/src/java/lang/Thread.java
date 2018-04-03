@@ -199,18 +199,13 @@ class Thread implements Runnable {
      */
     private long nativeParkEventPointer;
 
-    /*
-     * Thread ID
-     */
+    /* Thread ID */
     private long tid;
 
     /* For generating thread ID */
     private static long threadSeqNumber;
 
-    /* Java thread status for tools,
-     * initialized to indicate thread 'not yet started'
-     */
-
+    /* Java thread status for tools, initialized to indicate thread 'not yet started' */
     private volatile int threadStatus = 0;
 
 

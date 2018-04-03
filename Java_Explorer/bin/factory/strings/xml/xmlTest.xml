@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item version="1.0">
+    <id>110</id>
+    <title><![CDATA[4K 高清]]></title>
+    <category><![CDATA[电视>4K>高清]]></category>
+    <url><![CDATA[http://baidu.com]]></url>
+    <url_wap><![CDATA[http://baidu.wap.com]]></url_wap>
+    <price>100</price>
+    <promotion_price>111</promotion_price>
+    <wap_price>113</wap_price>
+    <sub_item_ids>
+        <sub_item_id>11_11_11</sub_item_id>
+        <sub_item_id>22_22_22</sub_item_id>
+        <sub_item_id>33_33_33</sub_item_id>
+    </sub_item_ids>
+    <detail><![CDATA[theDetail]]></detail>
+    <status>1</status>
+    <pic_main>
+        <img>
+            <url><![CDATA[-0-]]></url>
+            <size>40×40</size>
+        </img>
+        <img>
+            <url><![CDATA[-1-]]></url>
+            <size>40×40</size>
+        </img>
+    </pic_main>
+    <pic_extra>
+        <img>
+            <url><![CDATA[-0-]]></url>
+            <size>40×40</size>
+        </img>
+        <img>
+            <url><![CDATA[-1-]]></url>
+            <size>40×40</size>
+        </img>
+    </pic_extra>
+</item>
+
