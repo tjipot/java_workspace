@@ -31,8 +31,7 @@ class StaticBlockDemo {
 		StaticBlock staticBlock = new StaticBlock();    // 类使用, 2;
 		staticBlock.showMsg();
 
-		/*
-		 *  Static Code Block Demo.. One.
+		/*  Static Code Block Demo.. One.
 			Static Code Block Demo.. Two.
 			Static Code Block..             // 只显示了一次, 因为static初始化作用的范围是类范围内, 包括对象的创建也包括在类范围内;
 			This is showMsg()..
