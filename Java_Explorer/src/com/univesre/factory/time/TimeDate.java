@@ -57,10 +57,6 @@ public class TimeDate {
 		int[] intArray = new int[]{0, 101};
 		System.out.println(intArray[1]);
 
-		// 生成UUID, @20171018;
-		for (int i = 0; i < 1; i++) {
-			System.out.println(UUID.randomUUID().toString());
-		}
 
 		/**
 		 * Calendar和Date相互转换, @0324;

@@ -24,13 +24,13 @@ public class UUIDTester {
 		// uuidStr2TxtFile("/Users/UNIVESRE/Desktop/uuidStr.txt", 10000);
 
 		// 产生时间;
-		// System.out.println(new Date().getTime());
+		System.out.println(new Date().getTime());
 
 		// 测试6位兑换码是否重复: 看输出;
 		// verifyCouponCode("/Users/UNIVESRE/Desktop/pureSixChars.txt");
 
 		// 获取30个UUID;
-		consoleOutUuid(30);
+		consoleOutUuid(44);
 
 	}
 
